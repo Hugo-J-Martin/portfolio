@@ -1,0 +1,195 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+    
+    
+    body{
+      background-image: url("Images/CloudyDays.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      overflow-y: scroll;
+      margin: 0;
+      padding: 0;
+      font-family: 'Agency';
+    }
+    
+    header {
+      
+      background: rgb(0,0,0,.5);
+      padding-bottom: 20px;
+      height: 60px;
+      text-align: center;
+      
+    }
+    header .mobile{
+    display: none; 
+    }
+    header a{
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top: 40px;
+      
+    }
+    header .logo a {
+      background-image: url("Images/Hugo-Martin.gif");
+      background-size: 300px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: relative;
+      width: 300px;
+      height: 80px;
+      
+      top: -30px;
+      text-indent: -999999px;
+    }
+    
+    nav ul{
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+    }
+    nav li{
+      display: inline-block;
+      font-size: 20px;
+      margin-right: 10px;
+      
+    }
+    
+    @media screen and (max-width: 615px) {
+      header .mobile{
+       display: inline-block; 
+      }
+      header .desktop{
+       display: none; 
+      }
+      header{
+       height: 85px; 
+      }
+      .featured-art{
+        display: none;
+      }
+    }
+    
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    
+    .featured-art{
+      
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+
+    
+    .featured-art figure {
+      background: none;
+
+      text-transform: uppercase;
+      margin: auto;
+    }
+    .featured-art figure img{
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    
+    .featured-art .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .featured-art .overlay {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: black;
+      margin: 10px;
+    }
+    
+    .featured-art .container:hover .overlay {
+      opacity: .5;
+    }
+    
+    .featured-art .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    figcaption{
+      background: rgb(0,0,0,.5);
+      margin-left: 100px;
+      margin-right: 100px;
+      border-radius: 30px;
+      
+    }
+    
+    
+    footer {
+      background: rgb(0,0,0,.75);
+      padding: 10px 0px;
+      text-align: center;
+    }
+    footer a{
+    color: white;
+    }
+    footer ul {
+      list-style-type: none;
+       
+    }
+    footer li{
+      display: inline-block;
+      color: white;
+      font-size: 25px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    
+    .capsule {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     text-align: center;
+    }
+    
+    .general-info .avatar{
+      display: inline-block;
+      position: relative;
+    }
+    
+    .general-info .avatar img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+    }
+    
+    main p{
+     color: white;
+     font-size: 25px;
+     text-align: center;
+     margin: auto;
+     width: 500px;
+    }
+    
+    
+
+    
+
